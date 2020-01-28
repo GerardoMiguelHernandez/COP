@@ -1,0 +1,59 @@
+<app-header titulo="Convención"></app-header>
+
+<ion-content>
+  <ion-card>
+    <img src="/assets/img/fazer_f1_2015.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Destination</ion-card-subtitle>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="/assets/img/fz_07_negra.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Destination</ion-card-subtitle>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+  <ion-slides pager="true" class="slide-full">
+
+    <ion-slide *ngFor="let slide of slides">
+
+      <ion-card mode="ios">
+
+        <img [src]="slide.img" class="slide-image">
+
+        <ion-card-header>
+          <ion-card-title> {{ slide.titulo }} </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ slide.desc }}
+        </ion-card-content>
+
+
+      </ion-card>
+
+    </ion-slide>
+
+
+    <ion-slide>
+      <ion-button expand="full"
+                  color="primary"
+                  fill="clear"
+                  (click)="onClick()">
+        Comenzar!
+      </ion-button>
+    </ion-slide>
+
+
+  </ion-slides>
+
+
+
+</ion-content>
