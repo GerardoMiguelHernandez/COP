@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { HotelPageRoutingModule } from './hotel-routing.module';
-
+import { Routes, RouterModule } from '@angular/router';
 import { HotelPage } from './hotel.page';
 import { ComponentsModule } from '../../components/components.module';
 
