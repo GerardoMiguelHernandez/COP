@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { Hotel1PageRoutingModule } from './hotel1-routing.module';
 
 import { Hotel1Page } from './hotel1.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Hotel1PageRoutingModule
+    Hotel1PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Hotel1Page]
 })
