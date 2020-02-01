@@ -26,7 +26,23 @@ const routes: Routes = [
   {
     path: 'hotel3',
     loadChildren: () => import('./pages/hotel3/hotel3.module').then( m => m.Hotel3PageModule)
+  },  {
+    path: 'itinerarios',
+    loadChildren: () => import('./pages/itinerarios/itinerarios.module').then( m => m.ItinerariosPageModule)
   },
+  {
+    path: 'itinerario1',
+    loadChildren: () => import('./pages/itinerario1/itinerario1.module').then( m => m.Itinerario1PageModule)
+  },
+  {
+    path: 'itinerario2',
+    loadChildren: () => import('./pages/itinerario2/itinerario2.module').then( m => m.Itinerario2PageModule)
+  },
+  {
+    path: 'itinerario3',
+    loadChildren: () => import('./pages/itinerario3/itinerario3.module').then( m => m.Itinerario3PageModule)
+  },
+
 ];
 
 @NgModule({
