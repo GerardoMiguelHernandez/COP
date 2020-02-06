@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'itinerario3',
     loadChildren: () => import('./pages/itinerario3/itinerario3.module').then( m => m.Itinerario3PageModule)
   },
+  {
+    path: 'ponentes',
+    loadChildren: () => import('./pages/ponentes/ponentes.module').then( m => m.PonentesPageModule)
+  },
 
 ];
 
