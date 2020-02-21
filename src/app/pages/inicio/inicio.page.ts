@@ -14,24 +14,24 @@ export class InicioPage implements OnInit {
 
   slides: { img: string, titulo: string, desc: string }[] = [
     {
-      img: '/assets/slides/photos.svg',
-      titulo: 'Comparte Fotos',
-      desc: 'Mira y comparte increíbles fotos de todo el mundo'
+      img: '/assets/img/fondo_ok.png',
+      titulo: 'Junta de Dirección 2020',
+      desc: 'Comparte, Aprende y Diviertete'
     },
     {
-      img: '/assets/slides/music-player-2.svg',
-      titulo: 'Escucha Música',
-      desc: 'Toda tu música favorita está aquí'
+      img: '/assets/img/canales_administrados.png',
+      titulo: 'Nuevos Canales Digitales',
+      desc: 'Demanda exponencial que los Nuevos Canales Digitales'
     },
     {
       img: '/assets/slides/calendar.svg',
-      titulo: 'Nunca olvides nada',
-      desc: 'El mejor calendario del mundo a tu disposición'
+      titulo: 'Agenda',
+      desc: 'Actividades y Ponencias'
     },
     {
-      img: '/assets/slides/placeholder-1.svg',
-      titulo: 'Tu ubicación',
-      desc: 'Siempre sabremos donde estás!'
+      img: '/assets/slides/hotel1.svg',
+      titulo: 'Hoteles',
+      desc: 'Hospedaje y Descanso'
     }
   ];
   constructor(private menuCtrl: MenuController,
